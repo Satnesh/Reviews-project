@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import  Data from './Data'
+
 import Review from './Review';
 
 

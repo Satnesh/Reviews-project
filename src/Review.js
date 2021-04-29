@@ -1,4 +1,5 @@
 import React,{useState} from 'react'
+import {Button} from 'reactstrap'
 
 import  Data from './Data'
 import {FaChevronCircleLeft,FaChevronCircleRight,FaQuoteRight} from 'react-icons/fa'
@@ -53,11 +54,12 @@ function Review() {
                 <h4>{name}</h4>
                 <p>{job}</p>
                 <p>{text}</p>
-                <button onClick={prev} ><FaChevronCircleLeft/></button>
-                <button onClick={next}  ><FaChevronCircleRight/></button>
+                <Button color="primary" onClick={prev} ><FaChevronCircleLeft/></Button>
+                <Button color="primary" onClick={next}  ><FaChevronCircleRight/></Button>
                 
             </div>
-            <button onClick={random}>Surprise Me</button>
+            <br></br>
+            <Button color="success" onClick={random}>Surprise Me</Button>
             </div>
            
 
@@ -66,3 +68,8 @@ function Review() {
 }
 
 export default Review
+
+
+const record =()=>{
+    const randomNumber=Math.floor(Math.random() * Data.length)
+}
